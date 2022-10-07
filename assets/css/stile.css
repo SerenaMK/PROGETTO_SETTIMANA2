@@ -237,6 +237,38 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
     }
 }
 
+@media screen and (min-width: 1200px){
+    .container {
+        grid-template-areas: 
+        "uno uno uno uno uno uno uno uno uno uno uno uno"
+        "due due due due due due due due due due due due"
+        ". tre tre tre quattro quattro quattro quattro cinque cinque cinque ."
+        "sei sei sei sei sei sei sei sei sei sei sei sei"
+        ". . sette sette sette sette otto otto otto otto . ."
+    }
+}
+
+@media screen and (min-width: 1200px){
+    div#cont-chisiamo.container {
+        grid-template-areas: 
+        ". uno uno uno uno uno uno uno uno uno uno ."
+        ". due due due due due tre tre tre tre tre ."
+        "quattro quattro quattro quattro quattro quattro quattro quattro quattro quattro quattro quattro"
+    }
+}
+
+@media screen and (min-width: 1200px){
+    div#cont-cont.container {
+        grid-template-areas: 
+        ". uno uno uno uno uno uno uno uno uno uno ."
+        ". . due due due due tre tre tre tre . ."
+    }
+
+    #address {
+        width: 500px;
+    }
+}
+
 
 
 /* FORM */
@@ -283,8 +315,7 @@ input:placeholder-shown, textarea:placeholder-shown {
 /* TABELLA */
 
 table {
-    margin-top: 5em;
-    margin-bottom: 40px;
+    margin: 5em auto 40px;
     text-align: left;
 }
 
@@ -423,6 +454,13 @@ footer #chisiamo {
     }
 }
 
+@media screen and (min-width: 660px){
+    #form-contatti.elemento {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (min-width: 1200px){
 
     .container {
@@ -437,4 +475,16 @@ footer #chisiamo {
         margin-bottom: 50px;
     }
 
+    table {
+        width: 40em;
+    }
+
+    #form-contatti.elemento {
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    #address.elemento {
+        margin-left: 100px;
+    }
 }

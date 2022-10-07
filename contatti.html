@@ -30,7 +30,7 @@
   </header>
 
   <main>
-    <div class="container">
+    <div class="container" id="cont-cont">
 
       <div class="elemento">
         <h1>Contatti</h1>
@@ -51,13 +51,15 @@
         <!-- FINE FORM -->
       </div>
 
-      <div class="elemento">
+      <div class="elemento" id="address">
         <h3>Sede formativa</h3>
         <address>
           <p>
-            Via Appia 1
+            Via Appia 1<br>
             00100 Roma (RM)
-            info@epicode.school
+          </p>
+          <p>
+            info@epicode.school<br>
             +39 0612345956
           </p>
         </address>
@@ -72,28 +74,35 @@
   </main>
 
   <footer>
-    <h4>Chi siamo</h4>
-    <p>Epicode School nasce con l’obiettivo di rivoluzionare la formazione in ambito tech.</p>
-    <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
-    <i class="lni lni-facebook-original"></i>
-    <i class="lni lni-linkedin-original"></i>
-    <i class="lni lni-instagram-filled"></i>
+    <div id="footer-flex">
+      <div>
+        <h4>Chi siamo</h4>
+        <p>Epicode School nasce con l’obiettivo di rivoluzionare la formazione in ambito tech.</p>
+      </div>
+      <div>
+        <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
+        <i class="lni lni-facebook-original"></i>
+        <i class="lni lni-linkedin-original"></i>
+        <i class="lni lni-instagram-filled"></i>
+      </div>
 
-    <!-- FORM -->
-
-    <form method="post" action="form.php" autocomplete="on">
-      <fieldset>
-        <label for="email">
-          <h4>Iscriviti alla nostra newsletter</h4>
-        </label>
-        <input type="text" name="email" id="email">
-        <button type="submit">Va bene!</button>
-      </fieldset>
-    </form>
+      <!-- FORM -->
+      <div>
+        <form method="post" action="form.php" autocomplete="on">
+          <fieldset>
+            <label for="email">
+              <h4>Iscriviti alla nostra newsletter</h4>
+            </label>
+            <input type="text" name="email" id="email">
+            <button type="submit">Va bene!</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
 
     <!-- FINE FORM -->
 
-    <p>© 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
+    <p id="credits" >© 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
   </footer>
 </body>
 
