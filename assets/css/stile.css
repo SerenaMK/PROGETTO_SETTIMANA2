@@ -93,6 +93,7 @@ nav {
 
 nav p {
     margin-left: 10px;
+    margin-bottom: 0;
 }
 
 nav p:last-of-type {
@@ -341,11 +342,23 @@ footer {
 
 footer p {
     margin-bottom: 25px;
+    text-align: center;
 }
 
 footer .lni {
     font-size: 2em;
     margin-bottom: 50px;
+}
+
+#footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer-flex div {
+    width: 400px;
+    margin-left: 30px;
 }
 
 
@@ -365,39 +378,46 @@ footer .lni {
     }
 }
 
+
 @media screen and (max-width: 629px) {
-    #banner-bg {
-        height: 23em;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    #banner-bg {
-        height: 25em;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    #banner-bg {
-        height: 28em;
-    }
-}
-
-@media screen and (max-width: 362px) {
-    #banner-bg {
-        height: 30em;
-    }
-}
-
-@media screen and (max-width: 320px) {
     #banner-bg {
         height: 33em;
     }
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (max-width: 520px) {
     #banner-bg {
-        height: 20em;
+        height: 35em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #banner-bg {
+        height: 34em;
+    }
+
+    #banner-text {
+        padding-top: 1em;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    #banner-bg {
+        height: 36em;
+    }
+
+    #banner-text {
+        padding-top: 1em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #banner-bg {
+        height: 40em;
+    }
+
+    #banner-text {
+        padding-top: 1em;
     }
 }
 
