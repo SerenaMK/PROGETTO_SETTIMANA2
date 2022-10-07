@@ -119,25 +119,9 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
 }
 
 
-
 /* GRID */
 
 .container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-areas:
-        "uno"
-        "due"
-        "tre"
-        "quattro"
-        "cinque"
-        "sei"
-        "sette"
-        "otto"
-}
-
-.containerChiSiamo {
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
@@ -342,7 +326,6 @@ footer {
 
 footer p {
     margin-bottom: 25px;
-    text-align: center;
 }
 
 footer .lni {
@@ -361,6 +344,13 @@ footer .lni {
     margin-left: 30px;
 }
 
+footer #chisiamo {
+    text-align: left;
+}
+
+#credits {
+    text-align: center;
+}
 
 
 
@@ -378,46 +368,58 @@ footer .lni {
     }
 }
 
-
-@media screen and (max-width: 629px) {
+@media screen and (max-width: 949px) {
     #banner-bg {
-        height: 33em;
+        height: 21em;
     }
 }
 
-@media screen and (max-width: 520px) {
-    #banner-bg {
-        height: 35em;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    #banner-bg {
-        height: 34em;
-    }
-
+@media screen and (max-width: 1169px) {
     #banner-text {
         padding-top: 1em;
     }
 }
 
-@media screen and (max-width: 362px) {
+@media screen and (max-width: 759px) {
     #banner-bg {
-        height: 36em;
+        height: 27em;
     }
 
     #banner-text {
-        padding-top: 1em;
+        padding-top: 2em;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
     #banner-bg {
-        height: 40em;
+        height: 21em;
     }
 
     #banner-text {
-        padding-top: 1em;
+        padding-top: 2em;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    #banner-bg {
+        height: 22em;
+    }
+
+    #banner-text {
+        padding-top: 2em;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    #banner-bg {
+        height: 26em;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    #banner-bg {
+        height: 28em;
     }
 }
 
