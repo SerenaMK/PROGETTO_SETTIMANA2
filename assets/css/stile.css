@@ -68,10 +68,17 @@ button {
 
 header {
     display: flex;
-    padding: 0.5em 1em;
+    padding: 0.7em 1em 0.5em;
     justify-content: space-between;
     align-items: center;
+    height: 4.4em;
 }
+
+header .lni-more-alt {
+    font-size: 2.2em;
+}
+
+
 
 /* MAIN */
 
@@ -116,7 +123,7 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
     min-height: 19em;
     max-height: 35em;
     filter: brightness(70%);
-    box-shadow: inset 0px 10px 20px #d3d3d3cd;
+    box-shadow: inset 0px 10px 20px rgba(255, 255, 255, 0.814);
 }
 
 #banner-text {
@@ -127,6 +134,17 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
     filter: brightness(100%);
     background-color: transparent;
 }
+
+#banner-text button {
+    text-shadow: 2px 2px 3px black;
+    animation: button-ani 3s infinite 0s;
+}
+
+@keyframes button-ani {
+    0% {box-shadow: 0px 0px 0px #d3d3d3;}
+    50% {box-shadow: #d3d3d3;}
+    100% {box-shadow: 0px 0px 50px transparent;}
+  }
 
 
 .elemento {
@@ -150,6 +168,7 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
 }
 .elemento:nth-child(5) {
     grid-area: cinque;
+    margin-bottom: 25px;
 }
 .elemento:nth-child(6) {
     grid-area: sei;
@@ -163,6 +182,8 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
 }
 .elemento:nth-child(8) {
     grid-area: otto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .elemento:nth-child(7) img {
@@ -240,7 +261,13 @@ footer .lni {
     }
 }
 
-@media screen and (max-width: 363px) {
+@media screen and (max-width: 362px) {
+    #banner-bg {
+        height: 30em;
+    }
+}
+
+@media screen and (max-width: 320px) {
     #banner-bg {
         height: 33em;
     }
