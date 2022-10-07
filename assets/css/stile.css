@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+/* IMPOSTAZIONI GENERALI */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;
+    color: #000;
+    background-color: white;
+}
+
+h1 {
+    line-height: 1;
+    font-size: 4rem;
+    margin-right: 80px;
+}
+
+h2 {
+    line-height: 1.1;
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    line-height: 1em;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+a {
+    color: #e42424;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+body .lni {
+    color:#e42424 ;
+}
+
+button {
+    font-size: 1.9rem;
+    color: white;
+    background-image: linear-gradient(90deg, #6cc1e2, #392f7a);
+    border: none;
+    height: 2.5em;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    padding: 0.5em 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+main button {
+    padding: 0 18px;
+}
+
+main .lni-comments, main .lni-map-marker, main .lni-consulting {
+    font-size: 2.8em;
+}
+
+
+
+/* GRID */
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "uno"
+        "due"
+        "tre"
+        "quattro"
+        "cinque"
+        "sei"
+        "sette"
+        "otto"
+}
+
+.container > div:first-of-type {
+    background-image: url("../images/banner.jpg");
+    box-shadow: inset 0px 10px 20px #d3d3d3cd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    text-align: left;
+}
+
+.elemento {
+    padding: 0 1.3em;
+    text-align: center;
+}
+
+.elemento:nth-child(1) {
+    grid-area: uno;
+}
+.elemento:nth-child(2) {
+    grid-area: due;
+}
+.elemento:nth-child(3) {
+    grid-area: tre;
+}
+.elemento:nth-child(4) {
+    grid-area: quattro;
+}
+.elemento:nth-child(5) {
+    grid-area: cinque;
+}
+.elemento:nth-child(6) {
+    grid-area: sei;
+    padding-top: 5.5em;
+    padding-bottom: 5.5em;
+    color: white;
+    background-color:#0c0633;
+}
+.elemento:nth-child(7) {
+    grid-area: sette;
+}
+.elemento:nth-child(8) {
+    grid-area: otto;
+}
+
+.elemento:nth-child(7) img {
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px){
+    .container {
+        grid-template-areas: 
+        "uno uno uno uno uno uno uno uno uno uno uno uno"
+        "due due due due due due due due due due due due"
+        ". tre tre tre quattro quattro quattro quattro cinque cinque cinque ."
+        "sei sei sei sei sei sei sei sei sei sei sei sei"
+        ". . sette sette sette sette otto otto otto otto . ."
+    }
+}
+
+
+/* FORM */
+
+input {
+    height: 3.4em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(238, 238, 238);
+    padding: 3em;
+}
+
+footer p {
+    margin-bottom: 25px;
+}
+
+footer .lni {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .container {
+        grid-template-columns: 10% auto auto auto auto auto auto auto auto auto auto 10%;
+    }
+
+    .elemento:nth-child(1) {
+        height: 20em;
+    }
+}
