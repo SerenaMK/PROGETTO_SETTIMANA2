@@ -84,6 +84,23 @@ header .lni-more-alt {
     font-size: 2.2em;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #545454;
+}
+
+nav p {
+    margin-left: 10px;
+}
+
+nav p:last-of-type {
+    color: white;
+    background-image: linear-gradient(90deg, #6cc1e2, #392f7a);
+    padding: 5px 10px;
+}
+
 
 
 /* MAIN */
@@ -185,6 +202,7 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
 
 .elemento img {
     width: 100%;
+    max-width: 400px;
 }
 
 .elemento:nth-child(1) {
@@ -251,11 +269,30 @@ footer form {
     margin-bottom: 25px;
 }
 
+#banner-text {
+    width: 50%;
+    margin: 0 auto;
+}
+
 #form-contatti fieldset {
-    height: 500px;
+    height: 270px;
     justify-content: space-between;
 }
 
+#form-contatti input {
+    height: 2.4em;
+    justify-content: space-between;
+}
+
+#form-contatti button {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+input:placeholder-shown, textarea:placeholder-shown {
+    font-style: italic;
+ }
 
 
 /* TABELLA */
@@ -322,6 +359,12 @@ footer .lni {
     }
 }
 
+@media screen and (min-width: 481px) {
+    header .lni-more-alt {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 629px) {
     #banner-bg {
         height: 23em;
@@ -362,6 +405,14 @@ footer .lni {
 
     .container {
         grid-template-columns: 10% auto auto auto auto auto auto auto auto auto auto 10%;
+    }
+
+    .elemento:nth-child(8) {
+        margin-top: 20%;
+    }
+
+    .elemento img {
+        margin-bottom: 50px;
     }
 
 }
