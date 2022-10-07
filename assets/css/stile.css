@@ -15,9 +15,9 @@ body {
 }
 
 h1 {
-    line-height: 1.3em;
+    line-height: 1;
     font-size: 4rem;
-    margin-right: 80px;
+    margin-top: 50px;
     margin-bottom: 25px;
 }
 
@@ -63,6 +63,10 @@ button {
     height: 2.5em;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 
 /* HEADER */
 
@@ -72,6 +76,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 4.4em;
+    box-shadow: 0px 5px 15px #d3d3d3;
+    z-index: 50;
 }
 
 header .lni-more-alt {
@@ -113,6 +119,21 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
         "otto"
 }
 
+.containerChiSiamo {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "uno"
+        "due"
+        "tre"
+        "quattro"
+        "cinque"
+        "sei"
+        "sette"
+        "otto"
+}
+
 #banner-bg {
     background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
@@ -123,7 +144,7 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
     min-height: 19em;
     max-height: 35em;
     filter: brightness(70%);
-    box-shadow: inset 0px 10px 20px rgba(255, 255, 255, 0.814);
+    z-index: -1;
 }
 
 #banner-text {
@@ -140,10 +161,20 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
     animation: button-ani 3s infinite 0s;
 }
 
+#banner-text h1 {
+    line-height: 1.3em;
+    margin: 0px 80px 25px 0px;
+}
+
 @keyframes button-ani {
     0% {box-shadow: 0px 0px 0px #d3d3d3;}
     50% {box-shadow: #d3d3d3;}
     100% {box-shadow: 0px 0px 50px transparent;}
+  }
+
+  #banner {    
+    padding: 0px;
+    margin-bottom: 80px;
   }
 
 
@@ -152,10 +183,12 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
     text-align: center;
 }
 
+.elemento img {
+    width: 100%;
+}
+
 .elemento:nth-child(1) {
     grid-area: uno;
-    padding: 0px;
-    margin-bottom: 80px;
 }
 .elemento:nth-child(2) {
     grid-area: due;
@@ -187,7 +220,7 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
 }
 
 .elemento:nth-child(7) img {
-    width: 100%;
+    margin-top: 50px;
 }
 
 @media screen and (min-width: 1200px){
@@ -202,9 +235,10 @@ main .lni-comments, main .lni-map-marker, main .lni-consulting {
 }
 
 
+
 /* FORM */
 
-input {
+footer input {
     height: 3.4em;
 }
 
@@ -213,9 +247,53 @@ fieldset {
     flex-direction: column;
 }
 
-form {
+footer form {
     margin-bottom: 25px;
 }
+
+#form-contatti fieldset {
+    height: 500px;
+    justify-content: space-between;
+}
+
+
+
+/* TABELLA */
+
+table {
+    margin-top: 5em;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+caption {
+    font-size: 2.6rem;
+}
+
+tr {
+    padding: 5px;
+}
+
+td {
+    padding: 5px 10px;
+}
+
+td:nth-child(odd) {
+    font-weight: bold;
+    padding: 5px 0px 5px 10px;
+}
+
+tr:nth-child(6n-5) {
+    background-color: #d2dce7;
+}
+tr:nth-child(6n-4) {
+    background-color: #d2dce7;
+}
+tr:nth-child(6n-3) {
+    background-color: #d2dce7;
+}
+
+
 
 /* FOOTER */
 
@@ -232,6 +310,7 @@ footer .lni {
     font-size: 2em;
     margin-bottom: 50px;
 }
+
 
 
 

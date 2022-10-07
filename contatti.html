@@ -5,14 +5,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="stile.css">
-  <title></title>  
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/stile.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+  <title>Epicode - Contatti</title>
+  <meta name="description" content="Epicode School: contattaci per i corsi di Front End Developer.">
 </head>
 
 <body>
 
+  <header>
+    <div>
+      <a href="#"><img src="assets/images/logo.png" alt="Logo di Epicode"></a>
+    </div>
+    <nav>
+      <p>Home</p>
+      <p>Chi siamo</p>
+      <p>Contatti</p>
+      <p>Registrati</p>
+    </nav>
+    <i class="lni lni-more-alt"></i>
+  </header>
 
+  <main>
+    <div class="container">
+
+      <div class="elemento">
+        <h1>Contatti</h1>
+      </div>
+
+      <div class="elemento" id="form-contatti">
+        <!-- FORM -->
+
+        <form method="post" action="form.php" autocomplete="on">
+          <fieldset>
+            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email">
+            <button type="submit">Va bene!</button>
+          </fieldset>
+        </form>
+
+        <!-- FINE FORM -->
+      </div>
+
+      <div class="elemento">
+        <h3>Sede formativa</h3>
+        <address>
+          <p>
+            Via Appia 1
+            00100 Roma (RM)
+            info@epicode.school
+            +39 0612345956
+          </p>
+        </address>
+
+        <h3>Lavora con noi</h3>
+        <p>
+          Per poterti candidare ad un ruolo da docente invia il tuo cv a job@epicode.school
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <h4>Chi siamo</h4>
+    <p>Epicode School nasce con l’obiettivo di rivoluzionare la formazione in ambito tech.</p>
+    <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
+    <i class="lni lni-facebook-original"></i>
+    <i class="lni lni-linkedin-original"></i>
+    <i class="lni lni-instagram-filled"></i>
+
+    <!-- FORM -->
+
+    <form method="post" action="form.php" autocomplete="on">
+      <fieldset>
+        <label for="email">
+          <h4>Iscriviti alla nostra newsletter</h4>
+        </label>
+        <input type="text" name="email" id="email">
+        <button type="submit">Va bene!</button>
+      </fieldset>
+    </form>
+
+    <!-- FINE FORM -->
+
+    <p>© 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
+  </footer>
 </body>
 
 </html>
