@@ -316,6 +316,9 @@ input:placeholder-shown, textarea:placeholder-shown {
 
 table {
     margin: 5em auto 40px;
+}
+
+#tab-mobile table {
     text-align: left;
 }
 
@@ -327,11 +330,11 @@ tr {
     padding: 5px;
 }
 
-td {
+td, th {
     padding: 5px 10px;
 }
 
-td:nth-child(odd) {
+#tab-mobile td:nth-child(odd) {
     font-weight: bold;
     padding: 5px 0px 5px 10px;
 }
@@ -344,6 +347,14 @@ tr:nth-child(6n-4) {
 }
 tr:nth-child(6n-3) {
     background-color: #d2dce7;
+}
+
+#tab-desktop
+
+th {
+    background-color: #5F82A3;
+    color: white;
+    text-transform: uppercase;
 }
 
 
@@ -460,6 +471,13 @@ footer #chisiamo {
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 1199px){
+    #tab-desktop {
+        display: none;
+    }
+}
+
+
 
 @media screen and (min-width: 1200px){
 
@@ -481,7 +499,16 @@ footer #chisiamo {
     }
 
     table {
-        width: 40em;
+        width: 50em;
+        text-align: center;
+    }
+
+    #tab-desktop tr {
+        background-color: #d2dce7;
+    }
+
+    #tab-desktop tr:nth-child(even) {
+        background-color: white;
     }
 
     #form-contatti.elemento {
@@ -489,7 +516,12 @@ footer #chisiamo {
         margin: 0 auto;
         margin-left: 50px;
     }
+
     #address.elemento {
         margin-left: 100px;
+    }
+
+    #tab-mobile {
+        display: none;
     }
 }
